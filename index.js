@@ -320,10 +320,7 @@ function parse(query, options) {
 	}, Object.create(null));
 }
 
-exports.extract = extract;
-exports.parse = parse;
-
-exports.stringify = (object, options) => {
+function stringify(object, options){
 	if (!object) {
 		return '';
 	}
@@ -391,11 +388,11 @@ exports.stringifyUrl = (object, options) => {
 	}, options);
 
 	const url = removeHash(object.url).split('?')[0] || '';
-	const queryFromUrl = exports.extract(object.url);
-	const parsedQueryFromUrl = exports.parse(queryFromUrl, {sort: false});
+	const queryFromUrl = extract(object.url);
+	const parsedQueryFromUrl = parse(queryFromUrl, {sort: false});
 
 	const query = Object.assign(parsedQueryFromUrl, object.query);
-	let queryString = exports.stringify(query, options);
+	let queryString = stringify(query, options);
 	if (queryString) {
 		queryString = `?${queryString}`;
 	}
