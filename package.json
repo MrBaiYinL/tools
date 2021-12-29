@@ -6,8 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "MrLuo",
   "license": "MIT",
+  "homepage": "https://github.com/MrBaiYinL/tools",
+  "repository": "https://github.com/MrBaiYinL/tools",
   "dependencies": {
 		"decode-uri-component": "^0.2.0",
 		"split-on-first": "^1.0.0",
