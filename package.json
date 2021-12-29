@@ -1,5 +1,5 @@
 {
-  "name": "query-string",
+  "name": "query-stringify",
   "version": "1.0.0",
   "description": "tool",
   "main": "index.js",
