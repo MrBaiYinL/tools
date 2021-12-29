@@ -13,10 +13,8 @@ $ npm i stringifyurl
 ```js
 const queryString = require('stringifyurl');
 
-### .stringifyUrl(object, options)
-
-```js
-queryString.stringifyUrl({url: 'https://baidu.com', query: {foo: 'bar'}});
-//=> 'https://foo.bar?foo=bar'
+// .stringifyUrl(object)
+queryString.stringifyUrl({url: 'https://xxx.com', query: {age: '18'}});
+// 'https://xxx.com?age=18'
 
 ```
