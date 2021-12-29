@@ -1,0 +1,29 @@
+<!--
+ * @LastEditors: luoxiaolei001
+ * @LastEditTime: 2021-12-29 18:10:28
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script src="../index.js"></script>
+<script> 
+  var obj = {url:'www.bau.com', query: {age: '18', name: 'ha'}}
+  function stringifyUrl(obj){
+    const query = Object.assign(obj.query);
+    let queryString = stringify(query);
+    if (queryString) {
+      queryString = `?${queryString}`;
+    }
+    console.log(`${obj.url}${queryString}`)
+    return `${obj.url}${queryString}`;
+  };
+  stringifyUrl(obj)
+  
+</script>
+</html>

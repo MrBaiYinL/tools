@@ -1,6 +1,6 @@
 {
   "name": "stringifyurl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "tool",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,5 @@
   "author": "MrLuo",
   "license": "MIT",
   "homepage": "https://github.com/MrBaiYinL/tools",
-  "repository": "https://github.com/MrBaiYinL/tools",
-  "dependencies": {
-		"decode-uri-component": "^0.2.0",
-		"split-on-first": "^1.0.0",
-		"strict-uri-encode": "^2.0.0"
-	}
+  "repository": "https://github.com/MrBaiYinL/tools"
 }
